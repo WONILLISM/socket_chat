@@ -1,9 +1,17 @@
 {
-    "name": "socket-chat-example",
-    "version": "0.0.1",
-    "description": "my first socket.io app",
-    "dependencies": {
-        "express": "^4.17.1",
-        "socket.io": "^4.2.0"
-    }
+  "name": "socket-chat-example",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+//github.com/WONILLISM/socket_chat.git"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.2.0"
+  }
 }
