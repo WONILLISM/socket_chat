@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 // socket.io의 기본 이벤트, 사용자가 웹 사이트를 열면 자동으로 발생하는 이벤트
-// 채팅방에 접속했을 때 - 1
+// 채팅방에 접속했을 때
 io.on('connection', socket => {
   // 만약 유저가 있으면 user_list 이벤트 전달
   if (user_list) io.emit('user_list', user_list);
