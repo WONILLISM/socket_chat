@@ -78,11 +78,12 @@
 
       let socket = io();
 
+      // 다른 클라이언트 입장시 입장 메세지 출력
       socket.emit('welcome-msg', nickname);
-      socket.on('welcome-msg', nick => {
+      socket.on('welcome-msg', nickname => {
         const item = document.createElement('li');
         item.className = 'notification-msg';
-        item.textContent = nick + '님이 입장하셨습니다.';
+        item.textContent = nickname + '님이 입장하셨습니다.';
         messages.appendChild(item);
         window.scrollTo(0, document.body.scrollHeight);
       });
